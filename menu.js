@@ -203,10 +203,9 @@ const filteredFood = foodArr.filter(foodArr => foodArr.tags.includes('tasty'))
 */
 
 //CODE HERE
-const filterByProperty = (property, number, type) => {
+const filterByProperty = foodArr.filter(function(element){
     
-}
-
+})
 /*
     Invoke the `filterByProperty` function passing
     in a value for each paramter.
