@@ -203,16 +203,8 @@ const filteredFood = foodArr.filter(foodArr => foodArr.tags.includes('tasty'))
 */
 
 //CODE HERE
-function filterByProperty (property, number, type) = {
-    property = price,
-    number = 5 
-    {
-        if(number < property){
-            return false
-        } else {
-            return true
-        }
-    }
+const filterByProperty = (property, number, type) => {
+    
 }
 
 /*
