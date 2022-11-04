@@ -203,9 +203,17 @@ const filteredFood = foodArr.filter(foodArr => foodArr.tags.includes('tasty'))
 */
 
 //CODE HERE
-const filterByProperty = foodArr.filter(function(element){
-    
-})
+function filterByProperty (property, number, type) {
+    let filteredArray = foodArr.filter((foodObj) => {
+        if(type === 'above') {
+            return foodObj[property] > number
+        } else if (type === 'below') {
+            return foodObj[property] < number
+        }
+    })
+    return filteredArray
+}
+
 /*
     Invoke the `filterByProperty` function passing
     in a value for each paramter.
@@ -214,3 +222,4 @@ const filterByProperty = foodArr.filter(function(element){
 */
 
 //CODE HERE
+console.log(filterByProperty('rating', 6 ,'above'))

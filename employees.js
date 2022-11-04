@@ -92,7 +92,20 @@ empTwo.name = empTwo.name.replace('Jess', 'Nick')
 */
 
 //CODE HERE
+class Manager extends Employee {
+    constructor(name, shifts, employees) {
+        super(name, shifts)
+        this.employees = employees
+    }
 
+    getEmployees() {
+        console.log(`${this.name} manages ${this.employees}`)
+    }
+
+    addEmployee(emp)  {
+        this.employees.push(emp)
+    }
+}
 
 
 /*
@@ -107,7 +120,7 @@ empTwo.name = empTwo.name.replace('Jess', 'Nick')
 */
 
 //CODE HERE
-
+let manager = new Manager('Winston ', 'weekday mornings, weekday afternoons ', ['CeCe', 'Schmidt '])
 
 /*
     Call the `getEmployees` method on the
@@ -115,6 +128,7 @@ empTwo.name = empTwo.name.replace('Jess', 'Nick')
 */
 
 //CODE HERE
+manager.getEmployees()
 
 /*
     Call the `addEmployee` method on the 
@@ -123,6 +137,7 @@ empTwo.name = empTwo.name.replace('Jess', 'Nick')
 */
 
 //CODE HERE 
+manager.addEmployee('Coach')
 
 /*
     Call the `getEmployees` method on the
@@ -131,3 +146,4 @@ empTwo.name = empTwo.name.replace('Jess', 'Nick')
 */
 
 //CODE HERE
+manager.getEmployees()

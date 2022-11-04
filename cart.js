@@ -55,7 +55,9 @@ console.log(summedPrice)
 */
 
 //CODE HERE
-
+function calcFinalPrice(cartTotal, couponValue, tax) {
+    return cartTotal + cartTotal * tax - couponValue
+}
 
 
 //////////////////PROBLEM 3////////////////////
@@ -80,7 +82,10 @@ console.log(summedPrice)
 
 /*
     TEXT ANSWER HERE
-
+    name: (string) so i know who's order it is
+    address: (string) so i no where to send order
+    phone number: (number) for emergencys
+    save user info: (boolean) if they want to stay logged in
 */
 
 /*
@@ -89,3 +94,9 @@ console.log(summedPrice)
 */
 
 //CODE HERE
+let custObj = {
+    name: "Enrique",
+    address: "123 E 456 W, Lehi, UT, 84105",
+    phone: 8018675309,
+    wantsMarketingEmails: false
+}

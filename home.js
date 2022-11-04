@@ -88,13 +88,13 @@ const canWeDeliver = (zipCode) => {
 const canWeDeliverTwo = (arr, zipCode, cb) => cb(arr.includes(zipCode))
 
 
-// canWeDeliverTwo(deliveryAreaZipCodes, 8505, result => {
-//     if(result === true){
-//         console.log(`You're in our delivery zone!`)
-//     } else {
-//         console.log(`Sorry, you're not in our delivery zone`)
-//     }
-// })
+canWeDeliverTwo(deliveryAreaZipCodes, 8505, result => {
+    if(result === true){
+        console.log(`You're in our delivery zone!`)
+    } else {
+        console.log(`Sorry, you're not in our delivery zone`)
+    }
+})
 
 
 
